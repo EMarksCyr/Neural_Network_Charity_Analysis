@@ -21,8 +21,7 @@ To do this, I will use the TensorFlow library to create a binary classifier capa
 	-   I was not. The closest I got to the target model performance of a 75% accuracy was 70.5% after my first attempt.
 -   What steps did you take to try and increase model performance?
 	-  The original model resulted in an accuracy of 53.3% (show below) ![orig](imgs/original_performance.PNG)
-	-   The first step I took to increase performance was binning the income variable to reduce the outliers present as an initial look at the counts revealed a number of extreme outliers that skewed the distribution right (shown below). 
-	    ![inc](imgs/income_dist.PNG)![inc adjusted](imgs/income_dist_adjusted.PNG). This brought the model's accuracy up to the highest it would achieve at 70.5%. 
+	-   The first step I took to increase performance was binning the income variable to reduce the outliers present as an initial look at the counts revealed a number of extreme outliers that skewed the distribution right. This brought the model's accuracy up to the highest it would achieve at 70.5%. 
 	    ![first](imgs/first_attempt_performance.PNG) 
 	-   The second step I took was adding the third hidden nodes layer and increased the size of existing neurons as mentioned above.  This brought the accuracy back down to 50.22% and was a good lesson on why we don't just increase complexity blindly when optimizing a function.         ![second](imgs/second_attempt_performance.PNG) 
 	-   The third step I took was trying to bin the ask amount factor to reduce outliers and remove the previously added nodes. This brought my accuracy up to 57%, but this was still worse than binning income alone, so it was removed during the fourth attempt.                                                                             ![third](imgs/third_attempt_performance.PNG) 
